@@ -1,0 +1,56 @@
+.html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 165px;
+}
+
+.header {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0 27px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 60px;
+}
+
+.menu__list-link {
+    color: #4C5866;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu__list-button {
+    display: flex;
+    gap: 30px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
