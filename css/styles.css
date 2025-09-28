@@ -14,6 +14,11 @@ ul {
     list-style: none;
 }
 
+html,
+body{
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -27,6 +32,12 @@ a {
 
 .header {
     border-bottom: 1px solid #DDDDDD;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__inner {
@@ -53,4 +64,30 @@ a {
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.first__footer{
+    background-color: #4C5866;
+}
+
+.second__footer{
+    display: flex;
+    align-items: center;
+    padding: 3px 0 3px;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
+    padding: 28px 0 28px;
+}
+
+.footer__menu-list{
+    display: flex;
+    gap: 30px;
 }
