@@ -15,7 +15,7 @@ ul {
 }
 
 html,
-body{
+body {
     height: 100%;
 }
 
@@ -25,7 +25,7 @@ a {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 0 165px;
 }
@@ -34,7 +34,7 @@ a {
     border-bottom: 1px solid #DDDDDD;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -66,28 +66,140 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.main{
+.main {
     flex-grow: 1;
 }
 
-.first__footer{
+.main__first {
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+}
+
+.top__leftside {
+    margin-top: 130px;
+}
+
+.main__title {
+    font-size: 60px;
+    color: #4C5866;
+    font-weight: 400;
+    max-width: 444px;
+}
+
+.term {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #85859B;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 445px;
+}
+
+.catalogue__button {
+    margin-top: 30px;
+    height: 63px;
+    width: 255px;
+    color: #7875FE;
+    border-color: #7875FE;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+}
+
+.top__rightside {
+    margin-top: 60px;
+    max-height: 560px;
+}
+
+.main__second {
+    max-height: 973px;
+    background-color: #EBEBEB;
+}
+
+.description__structure-firstBlock{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.description-blocks{
+    display: flex;
+    gap: 30px;
+}
+
+.buissnesCards{
+    margin-top: 110px;
+    display: flex;
+    gap: 30px;
+}
+
+.buissnesCards-version{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 128px;
+    padding-bottom: 10px;
+    color: #666666;
+}
+
+.buissnesCards-description{
+    font-size: 18px;
+    color: #85859B;
+}
+
+.description__structure-secondBlock{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.mid__left{
+    padding-top: 90px;
+}
+
+.mid__right{
+    padding-top: 149px;
+    max-width: 350px;
+}
+
+.title-first{
+    max-width: 350px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.businessCard-big__description-first{
+    margin-bottom: 12px;
+    color: #85859B;
+    line-height: 30px;
+}
+
+.businessCard-big__description-second{
+    margin-bottom: 12px;
+    color: #85859B;
+    line-height: 30px;
+}
+
+.first__footer {
     background-color: #4C5866;
 }
 
-.second__footer{
+.second__footer {
     display: flex;
     align-items: center;
     padding: 3px 0 3px;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
     justify-content: space-between;
     max-height: 80px;
     padding: 28px 0 28px;
 }
 
-.footer__menu-list{
+.footer__menu-list {
     display: flex;
     gap: 30px;
 }
