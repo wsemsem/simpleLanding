@@ -96,14 +96,27 @@ body {
     max-width: 445px;
 }
 
-.catalogue__button {
-    margin-top: 30px;
-    height: 63px;
-    width: 255px;
+button {
+    transition: background-color 0.7s ease,
+        transform 0.5s ease;
+}
+
+button:hover {
+    background-color: #4946B4;
+    color: #FFFFFF;
+    transform: translateY(-5px);
+}
+
+.catalogue__button{
+    padding-top: 30px;
+}
+
+.action__button{
+    height: 61px;
+    max-width: 253px;
+    width: 100%;
     color: #7875FE;
-    border-color: #7875FE;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #7875FE;
     background-color: #FFFFFF;
 }
 
@@ -113,28 +126,28 @@ body {
 }
 
 .main__second {
-    max-height: 973px;
+    height: 973px;
     background-color: #EBEBEB;
 }
 
-.description__structure-firstBlock{
+.description__structure-firstBlock {
     display: flex;
     justify-content: space-between;
-    gap:30px;
+    gap: 30px;
 }
 
-.description-blocks{
+.description-blocks {
     display: flex;
     gap: 30px;
 }
 
-.buissnesCards{
+.buissnesCards {
     margin-top: 110px;
     display: flex;
     gap: 30px;
 }
 
-.buissnesCards-version{
+.buissnesCards-version {
     font-size: 18px;
     font-weight: 500;
     padding-top: 128px;
@@ -142,27 +155,27 @@ body {
     color: #666666;
 }
 
-.buissnesCards-description{
+.buissnesCards-description {
     font-size: 18px;
     color: #85859B;
 }
 
-.description__structure-secondBlock{
+.description__structure-secondBlock {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
 }
 
-.mid__left{
+.mid__left {
     padding-top: 90px;
 }
 
-.mid__right{
+.mid__right {
     padding-top: 149px;
     max-width: 350px;
 }
 
-.title-first{
+.title-first {
     max-width: 350px;
     font-size: 40px;
     font-weight: 400;
@@ -170,13 +183,13 @@ body {
     margin-bottom: 20px;
 }
 
-.businessCard-big__description-first{
+.businessCard-big__description-first {
     margin-bottom: 12px;
     color: #85859B;
     line-height: 30px;
 }
 
-.businessCard-big__description-second{
+.businessCard-big__description-second {
     margin-bottom: 12px;
     color: #85859B;
     line-height: 30px;
