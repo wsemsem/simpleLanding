@@ -17,6 +17,7 @@ ul {
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -66,8 +67,8 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.main {
-    flex-grow: 1;
+main {
+    flex: 1;
 }
 
 .main__first {
@@ -107,11 +108,11 @@ button:hover {
     transform: translateY(-5px);
 }
 
-.catalogue__button{
+.catalogue__button {
     padding-top: 30px;
 }
 
-.action__button{
+.action__button {
     height: 61px;
     max-width: 253px;
     width: 100%;
@@ -193,6 +194,52 @@ button:hover {
     margin-bottom: 12px;
     color: #85859B;
     line-height: 30px;
+}
+
+.main__third{
+    min-height: 645px;
+}
+
+.catalogue__products {
+    padding-top: 90px;
+}
+
+.product__example {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple_products {
+    max-width: 255px;
+    width: 100%;
+}
+
+.product__name {
+    font-size: 30px;
+    padding-top: 20px;
+    color: #666666;
+}
+
+.product__draw {
+    padding: 8px 0;
+    color: #B5B5BD;
+    font-size: 14px;
+}
+
+.product__description {
+    font-size: 18px;
+    color: #85859B;
+    line-height: 25px;
+    max-height: 155px;
+}
+
+.product__info{
+    padding-top: 20px;
+}
+
+.more__info-button{
+    font-size: 20px;
+    color: #7875FE;
 }
 
 .first__footer {
