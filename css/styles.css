@@ -242,6 +242,53 @@ button:hover {
     color: #7875FE;
 }
 
+.main-fourth{
+    background-color: #EBEBEB;
+}
+
+.buissnes__partners-list{
+    padding: 90px 0 90px;
+    max-width: 255px;
+    max-height: 135px;
+}
+
+.buissnes__partners{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sketchbook_info{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main__fifth-leftside{
+    padding-top: 24px;
+}
+
+.sketchbook{
+    font-size: 40px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.sketchbook__description{
+    padding-top: 8px;
+    color: #85859B;
+    line-height: 30px;
+    width: 320px;
+}
+
+.sketchbook__button-buy{
+    padding-top: 30px;
+}
+
+.main__fifth-rightside{
+    max-height: 410px;
+}
+
 .first__footer {
     background-color: #4C5866;
 }
