@@ -1,3 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 .html {
     box-sizing: border-box;
 }
@@ -47,9 +183,17 @@ a {
     padding: 28px 0 27px;
 }
 
+.header__inner-690 {
+    display: none;
+}
+
 .menu__list {
     display: flex;
     gap: 60px;
+}
+
+.menu__list-690 {
+    display: none;
 }
 
 .menu__list-link {
@@ -126,8 +270,11 @@ button:hover {
     max-height: 560px;
 }
 
+.top__rightside-690 {
+    display: none;
+}
+
 .main__second {
-    height: 973px;
     background-color: #EBEBEB;
 }
 
@@ -184,6 +331,10 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.businessCard-big-690 {
+    display: none;
+}
+
 .businessCard-big__description-first {
     margin-bottom: 12px;
     color: #85859B;
@@ -196,7 +347,11 @@ button:hover {
     line-height: 30px;
 }
 
-.main__third{
+.businessCard-big__description-second {
+    padding-bottom: 150px;
+}
+
+.main__third {
     min-height: 645px;
 }
 
@@ -207,6 +362,10 @@ button:hover {
 .product__example {
     display: flex;
     justify-content: space-between;
+}
+
+.ProductImage690 {
+    display: none;
 }
 
 .simple_products {
@@ -233,59 +392,59 @@ button:hover {
     max-height: 155px;
 }
 
-.product__info{
+.product__info {
     padding-top: 20px;
 }
 
-.more__info-button{
+.more__info-button {
     font-size: 20px;
     color: #7875FE;
 }
 
-.main-fourth{
+.main-fourth {
     background-color: #EBEBEB;
 }
 
-.buissnes__partners-list{
-    padding: 90px 0 90px;
+.buissnes__partners-list {
+    padding: 90px 0;
     max-width: 255px;
     max-height: 135px;
 }
 
-.buissnes__partners{
+.buissnes__partners {
     display: flex;
     justify-content: space-between;
 }
 
-.sketchbook_info{
+.sketchbook_info {
     padding-top: 90px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.main__fifth-leftside{
+.main__fifth-leftside {
     padding-top: 24px;
 }
 
-.sketchbook{
+.sketchbook {
     font-size: 40px;
     font-weight: 400;
     color: #666666;
 }
 
-.sketchbook__description{
+.sketchbook__description {
     padding-top: 8px;
     color: #85859B;
     line-height: 30px;
     width: 320px;
 }
 
-.sketchbook__button-buy{
+.sketchbook__button-buy {
     padding-top: 30px;
 }
 
-.main__fifth-rightside{
+.main__fifth-rightside {
     max-height: 410px;
 }
 
@@ -309,4 +468,164 @@ button:hover {
 .footer__menu-list {
     display: flex;
     gap: 30px;
+}
+
+@media (max-width: 768px) {
+
+    /* Хедер */
+    .header__inner {
+        display: none;
+    }
+
+    .header__inner-690 {
+        display: block;
+    }
+
+    .header__inner-690-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 0;
+    }
+
+    .menu__list-button-690 {
+        display: flex;
+        gap: 54px;
+    }
+
+    .header__border-690 {
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .menu__list-690 {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+    }
+
+    .container {
+        max-width: 690px;
+        padding: 0 39px;
+    }
+
+    /* Первая часть мейна */
+
+    .main__first {
+        gap: 70px;
+    }
+
+    .main__title {
+        font-size: 40px;
+    }
+
+    .term {
+        font-size: 15px;
+    }
+
+
+    .top__leftside {
+        margin-top: 65px;
+    }
+
+    .top__rightside {
+        display: none;
+    }
+
+    .top__rightside-690 {
+        display: flex;
+        padding-top: 60px;
+    }
+
+    .catalogue__button {
+        padding-bottom: 65px;
+    }
+
+    /* Вторая часть мейна */
+
+    .buissnesCards {
+        margin-top: 60px;
+    }
+
+    .description-blocks {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .buissnesCards-version {
+        padding-top: 5px;
+    }
+
+    .businessCard-big {
+        display: none;
+    }
+
+    .businessCard-big-690 {
+        display: flex;
+    }
+
+    .title-first {
+        font-size: 30px;
+    }
+
+    .mid__left {
+        padding-top: 40px;
+    }
+
+    .description__structure-secondBlock {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mid__right {
+        padding-top: 40px;
+    }
+
+    .main__second {
+        height: none;
+    }
+
+    .businessCard-big__description-first {
+        font-size: 15px;
+    }
+
+    .businessCard-big__description-second {
+        font-size: 15px;
+        padding-bottom: 60px;
+    }
+
+    /* Третья часть мейна */
+
+    .catalogue__products {
+        padding-top: 60px;
+    }
+
+    .simple_products {
+        max-width: 320px;
+
+    }
+
+    .product__example {
+        flex-wrap: wrap;
+    }
+
+    .defaultProductImage {
+        display: none;
+    }
+
+    .ProductImage690 {
+        display: flex;
+    }
+
+    .more__info-button {
+        padding: 60px 0;
+    }
+
+    .simple_products {
+        padding-bottom: 60px;
+    }
+
+    /* Четвертая часть мейна */
+
+
+
 }
